@@ -1,0 +1,26 @@
+.footer-container {
+    /* width: 500px;
+    height: 100px; */
+    background-color: darkgray;
+}
+.logo {
+    width: 100px;
+    margin-left: 25px;
+}
+.footer-nav {
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    /* padding-left: 15px; */
+    line-height: 10px;
+    text-align: left;
+}
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 1;
+}
