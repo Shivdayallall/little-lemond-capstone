@@ -1,3 +1,41 @@
 .header-section {
-    background-color: aquamarine;
+    background-color: #495e57 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 5em;
+    height: 26em;
+}
+.header-details {
+    margin-top: 5em;
+    margin-left: 38em;
+    text-align: left;
+    color: #ffffff;
+}
+.header-details h1 {
+    color: #F4ce14;
+}
+.header-details p {
+    white-space: normal;
+    width: 200px;
+}
+.reserveBTN {
+    background-color:#F4ce14;
+    text-transform: capitalize;
+}
+.img-cap-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+.img-cap {
+    width: 30em;
+    height: 35em;
+    position: absolute; /* Position the image relative to its containing div */
+    top: 10; /* Adjust the top position as needed */
+    right: 26em; /* Position the image on the right side */
+    bottom: -18em;
+    z-index: 1;
+    border-radius: 1em;
 }
