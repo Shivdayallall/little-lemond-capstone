@@ -2,30 +2,24 @@
     background-color: #495e57;
     height: 40em;
     width: 100%;
+    text-align: center;
+    color: #ffffff;
 }
-/* .slider {
-    margin: 0 auto;
-    margin-top: 10em;
-} */
+.review-text {
+    /* font-family: ; */
+    font-size: 3rem;
+    line-height: 1.5;
+    height: 12rem;
+}
+.review-img {
+    width: 6%;
+    border-radius: 100%;
+    margin: 20px;
+    background-color: white;
+}
+.slider {
+    padding: 7% 15%;
+}
 .carousel-indicators {
     display: none;
 }
-/* Customize the horizontal card */
-.horizontal-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: none;
-    margin: 0 auto;
-   margin-top: 15em;
-   width: 30em;
-   height: 15em;
-   border: 2px solid white;
-   background-color: #F4ce14;
-}
-  /* Style the card image */
-  .card-image {
-    width: 200px; /* Adjust the width as needed */
-    margin-right: 20px; /* Adjust the spacing between image and content */
-    margin-left: 5px;
-  }

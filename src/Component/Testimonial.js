@@ -5,7 +5,6 @@ import review3 from "../IMG/profile.png";
 import "./testimonials.css";
 
 import Carousel from "react-bootstrap/Carousel";
-import Card from "react-bootstrap/Card";
 
 const Testimonial = () => {
   const reviews = [
@@ -23,25 +22,24 @@ const Testimonial = () => {
     {
       name: "Jerry Mud",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'",
       image: review3,
     },
-
   ];
   return (
     <section className="reviews-section">
-      <Carousel className="slider" fade>
+      <Carousel className="slider" interval={1500}>
         {reviews.map((review, index) => (
           <Carousel.Item key={index}>
-            <Card className="horizontal-card">
-              <div className="card-image">
-                <Card.Img src={review.image} alt={review.name} />
-              </div>
-              <Card.Body>
-                <Card.Title>{review.name}</Card.Title>
-                <Card.Text>{review.description}</Card.Text>
-              </Card.Body>
-            </Card>
+            <h2 className="review-text">{review.description}</h2>
+            <div className="review-poster">
+              <img
+                className="review-img"
+                src={review.image}
+                alt="person who reviewed the resturant"
+              ></img>
+              <em>{review.name}</em>
+            </div>
           </Carousel.Item>
         ))}
       </Carousel>
