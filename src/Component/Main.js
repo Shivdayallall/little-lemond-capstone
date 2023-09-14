@@ -38,17 +38,22 @@ const Main = () => {
   ];
   return (
     <main>
-         <div className="labelContainer">
+      <div className="labelContainer">
         <h4>Today's special</h4>
         <button className="btn btn-warning orderBTN">Order online</button>
       </div>
       <div className="cardContainer">
         {cardData.map((item, index) => (
-          <div className="card border-warning mb-3 border-2 rounded" key={index}>
+          <div
+            className="card border-warning mb-3 border-2 rounded"
+            key={index}
+          >
             <img src={item.image} class="card-img-top" alt="..."></img>
             <div className="card-body text-start">
               <h5 className="card-title">{item.title}</h5>
-              <p class="card-text"><medium class="text-muted">${item.price}</medium></p>
+              <p class="card-text">
+                <medium class="text-muted">${item.price}</medium>
+              </p>
               <p className="card-text">{item.description}</p>
               <a href="#" className="btn btn-warning orderBTN">
                 Order
