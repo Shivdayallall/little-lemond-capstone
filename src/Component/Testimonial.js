@@ -10,20 +10,23 @@ const Testimonial = () => {
   const reviews = [
     {
       name: "John Doe",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "'This is the most AMAZING restaurant, hands down. The middle eastern authentic cuisine in this restaurant has the most JUICIEST kebabs in the universe and their tandoori bread is to die for.'",
       image: review1,
+      vote:"⭐⭐🌟🌟"
     },
     {
       name: "Jane Smith",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "'I tried a lamb gyro and I loved it. It was lettuce, onion and lamb with yogurt sauce. It was delicious.'",
       image: review2,
+      vote:"⭐⭐🌟🌟"
     },
     {
       name: "Jerry Mud",
       description:
-        "'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'",
+        "'Great fresh salads. We had salmon, beef and lamb rib kebabs. Service was good. Local neighborhood ambiance. Great experience.'",
       image: review3,
+      vote:"⭐⭐🌟🌟"
     },
   ];
   return (
@@ -39,6 +42,8 @@ const Testimonial = () => {
                 alt="person who reviewed the resturant"
               ></img>
               <em>{review.name}</em>
+              <br></br>
+              <em>{review.vote}</em>
             </div>
           </Carousel.Item>
         ))}

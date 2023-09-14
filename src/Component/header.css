@@ -32,9 +32,9 @@
 .img-cap {
     width: 30em;
     height: 30em;
-    position: absolute; /* Position the image relative to its containing div */
-    top: 10; /* Adjust the top position as needed */
-    right: 26em; /* Position the image on the right side */
+    position: absolute;
+    top: 10;
+    right: 26em;
     bottom: -12em;
     z-index: 1;
     border-radius: 1em;

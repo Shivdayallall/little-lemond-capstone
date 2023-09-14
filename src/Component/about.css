@@ -1,0 +1,32 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 5em;
+    height: 26em;
+}
+.about-details {
+    margin-top: 5em;
+    margin-left: 38em;
+    text-align: left;
+    color: black;
+}
+.about-details h1 {
+    color: #F4ce14;
+}
+.about-details p {
+    white-space: normal;
+    width: 200px;
+}
+.img-container-chef {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 25em;
+    background-color: red;
+}
+.img-chef {
+    width: 15em;
+    height: 15em;
+    padding-top: -5em;
+}
