@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.css"
+import "./about.css";
 import chef1 from "../IMG/chef1.jfif";
 import chef2 from "../IMG/chef2.jpg";
 
@@ -15,10 +15,19 @@ const About = () => {
         </p>
       </div>
 
-      {/* <div className="img-container-chef">
-        <img src={chef1} alt="woman presenting a plate of food" className="img-chef"></img>
-        <img src={chef2} alt="man presenting a plate of food" className="img-chef"></img>
-      </div> */}
+      <div className="img-container-chef">
+        <img
+          src={chef1}
+          alt="woman presenting a plate of food"
+          className="img-chef1"
+        ></img>
+
+        <img
+          src={chef2}
+          alt="man presenting a plate of food"
+          className="img-chef2"
+        ></img>
+      </div>
     </section>
   );
 };

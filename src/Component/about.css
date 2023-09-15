@@ -19,14 +19,27 @@
     width: 200px;
 }
 .img-container-chef {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 25em;
-    background-color: red;
+    /* display: flex;
+    justify-content: flex-end; */
+    height: 35em;
+    width: 35em;
+    background-color: aquamarine;
+    margin-left: 100em;
+    margin-bottom: 30em;
+    position: relative;
 }
-.img-chef {
-    width: 15em;
-    height: 15em;
-    padding-top: -5em;
+.img-chef1,.img-chef2 {
+    position: absolute;
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Maintain the aspect ratio */
+}
+.img-chef1 {
+    left: 0;
+    top: -200px;
+    z-index: 2;
+}
+.img-chef2 {
+    left: 290px;
+    top: -11em;
+    z-index: 1;
 }
