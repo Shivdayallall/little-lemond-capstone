@@ -1,6 +1,7 @@
 body {
   background-color: #ffffff;
   text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
 }
 .App {
   text-align: center;
