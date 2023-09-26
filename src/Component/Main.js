@@ -37,7 +37,7 @@ const Main = () => {
     },
   ];
   return (
-    <main>
+    <main id="menu">
       <div className="labelContainer">
         <h4>Today's special</h4>
         <button className="btn btn-warning orderBTN">Order online</button>
