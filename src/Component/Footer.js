@@ -1,10 +1,10 @@
 import React from "react";
 import "./footer.css";
 import footerLogo from "../IMG/footerLogo.png";
-import footer2 from "../IMG/footer2.png";
 import fb from "../IMG/facebook.png";
 import ig from "../IMG/instagram.png";
 import tw from "../IMG/twitter.png";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,22 +15,22 @@ const Footer = () => {
         <nav className="navLinks">
           <ul>
             <li>
-              <a href="home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="home">about</a>
+              <Link href="#about">about</Link>
             </li>
             <li>
-              <a href="home">menu</a>
+              <a href="#menu">menu</a>
             </li>
             <li>
-              <a href="home">Reservation</a>
+              <a href="#head">Reservation</a>
             </li>
             <li>
-              <a href="home">Order online</a>
+              <a href="/">Order online</a>
             </li>
             <li>
-              <a href="home">Login</a>
+              <a href="/">Login</a>
             </li>
           </ul>
         </nav>

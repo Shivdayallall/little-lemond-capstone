@@ -5,13 +5,24 @@
 .form-signin .form-floating:focus-within {
     z-index: 2;
 }
-.form-signin input[type="email, text, datetime-local"] {
-    margin-bottom: -1px;
+.form-signin input {
+    margin-bottom: 5px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    /* margin-bottom: 30px; */
+
 }
 .form-select{
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+#customer-contact {
+    /* background-color: salmon; */
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+}
+#header-title {
+    color: #F4ce14;
 }

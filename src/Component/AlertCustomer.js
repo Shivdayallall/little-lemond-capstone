@@ -1,22 +1,35 @@
 import React from "react";
-import Alert from "@mui/material/Alert";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 const AlertCustomer = ({
-fullName,
-time,
-email,
-date,
-partySize,
-occasion
+  show,
+  handleClose,
+  fullName,
+  time,
+  email,
+  date,
+  partySize,
+  occasion,
 }) => {
   return (
-    <div>
-      <Alert severity="success" color="info">
-        Thank you! A {occasion} reservation for {fullName} is booked for {date} at {time} for a party size of {partySize}.
-          {email}
-      </Alert>
-    </div>
+    <Modal show={show} onHide={handleClose} keyboard={false}>
+      <Modal.Header closeButton>
+        <Modal.Title>Reservation Confirmed!</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        Thank you! A {occasion} reservation for {fullName} is booked for {date} {" "}
+        at {time} for a party  of {" "}  {partySize}.
+        <br />
+        check your email {email} for more details.
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="warning" onClick={handleClose}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
   );
-};
+}
 
 export default AlertCustomer;

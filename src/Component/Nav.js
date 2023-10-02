@@ -1,8 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./nav.css";
-
 import logo from "../IMG/Logo.png";
+
 const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg">
@@ -37,7 +37,7 @@ const Nav = () => {
               </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/booktable">Reservation</Link>
+              <a className="nav-link" href="#head">Reservation</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#order-online">Order Online</a>
